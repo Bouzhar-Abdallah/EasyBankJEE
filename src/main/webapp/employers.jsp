@@ -6,24 +6,7 @@
 <body>
 <jsp:include page="components/navbar.jsp"/>
 
-<form id="myForm" method="POST" action="http://localhost:8080/easybankjee/employers/update">
-    <!-- Use a hidden input field to specify the HTTP method -->
-    <!-- Other form fields go here -->
-    <input type="hidden" name="_METHOD" value="PUT"/>
-    <input type="text" name="data" value="Some data">
-    <button type="submit">PUT</button>
-
-
-</form>
-<%--<form id="myForm" method="POST" action="http://localhost:8080/easybankjee/employers/new">
-    <!-- Use a hidden input field to specify the HTTP method -->
-    <!-- Other form fields go here -->
-    <input type="hidden" name="_METHOD" value="POST"/>
-
-    <button type="submit">new</button>
-
-
-</form>--%>
+<jsp:include page="components/searchForm.jsp" />
 
 <table>
     <tr>
@@ -82,6 +65,8 @@
     </c:forEach>
 
 </table>
+
+
 </body>
 <script src="scripts/script.js"></script>
 </html>

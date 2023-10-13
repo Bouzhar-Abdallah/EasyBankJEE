@@ -6,26 +6,47 @@
 <body>
 <jsp:include page="components/navbar.jsp"/>
 <h1>create form</h1>
-<form id="myForm" method="POST" action="http://localhost:8080/easybankjee/employers">
-    <input type="hidden" name="_METHOD" value="POST"/>
-    <label for="nom">First name:</label>
-    <input id="nom" placeholder="Nom"  type="text" name="nom">
+<div class="testbox">
+    <form class="form" id="myForm" method="POST" action="http://localhost:8080/easybankjee/employers">
+        <input type="hidden" name="_METHOD" value="POST"/>
+        <div class="banner">
+            <h1>Add Employer</h1>
+        </div>
+        <div class="item">
+            <p>Name</p>
+            <div class="name-item">
+                <input id="prenom" placeholder="Prenom" type="text" name="prenom">
+                <input id="nom" placeholder="Nom"  type="text" name="nom">
+            </div>
+        </div>
+        <div class="item">
+            <p>Email</p>
+            <input id="adresseEmail" placeholder="E-mail" type="email" name="adresseEmail">
+        </div>
+        <div class="item">
+            <p>Phone</p>
+            <input id="numeroTel" placeholder="Numero Tel" type="text" name="numeroTel">
+        </div>
 
-    <label for="prenom">First name:</label>
-    <input id="prenom" placeholder="Prenom" type="text" name="prenom">
-    <label for="dateNaissance">First name:</label>
-    <input id="dateNaissance" placeholder="01-01-1990" type="date" name="dateNaissance">
-    <label for="numeroTel">First name:</label>
-    <input id="numeroTel" placeholder="Numero Tel" type="text" name="numeroTel">
-    <label for="Adresse">First name:</label>
-    <input id="Adresse" placeholder="Adresse" type="text" name="adresse">
-    <label for="adresseEmail">First name:</label>
-    <input id="adresseEmail" placeholder="E-mail" type="email" name="adresseEmail">
-    <label for="dateRecrutement">First name:</label>
-    <input id="dateRecrutement" placeholder="01-01-2018" type="date" name="dateRecrutement">
-    <button type="submit">POST</button>
-</form>
-
+        <div class="item">
+            <p>Contact Address</p>
+            <input id="Adresse" placeholder="Adresse" type="text" name="adresse">
+        </div>
+        <div class="item">
+            <p>Date Naissance</p>
+            <input id="dateNaissance" placeholder="01-01-1990" type="date" name="dateNaissance">
+            <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="item">
+            <p>Date Naissance</p>
+            <input id="dateRecrutement" placeholder="01-01-2018" type="date" name="dateRecrutement">
+            <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="btn-block">
+            <button type="submit">SEND</button>
+        </div>
+    </form>
+</div>
 </body>
 <script src="scripts/script.js"></script>
 </html>

@@ -9,6 +9,7 @@ import java.util.Optional;
 import Implementations.EmployerDAO;
 import Objects.Employer;
 import Objects.Person;
+import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -78,7 +79,10 @@ public class EmployersServlet extends HttpServlet {
         }else if("submitedUpdate".equals(method)){
             doPut(req, resp);
         } else if ("delete".equals(method)) {
-            doDelete(req, resp);
+            doDelete(req, resp);}
+        else if ("search".equals(method)) {
+            System.out.println("here");
+            doSearch(req, resp);
         } else if ("POST".equals(method)) {
             Employer emp = new Employer();
             emp.setNom(req.getParameter("nom"));
@@ -88,7 +92,9 @@ public class EmployersServlet extends HttpServlet {
             emp.setAdresseEmail(req.getParameter("adresseEmail"));
             emp.setDateNaissance(LocalDate.parse(req.getParameter("dateNaissance")));
             emp.setNumeroTel(req.getParameter("numeroTel"));
-            employerDAO.create(emp);
+            if (employerDAO.create(emp).isPresent()){
+                resp.sendRedirect("/easybankjee/employers");
+            }
         }
     }
 
@@ -112,27 +118,24 @@ public class EmployersServlet extends HttpServlet {
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         System.out.println("from delete");
-        String id = req.getParameter("id");
-        //System.out.println("path info : " + id);
-        employerDAO.delete(Integer.valueOf(id));
+        String matricule = req.getParameter("matricule");
+
+        if (employerDAO.delete(Integer.valueOf(matricule)) == 1){
+            resp.sendRedirect("/easybankjee/employers");
+        }
         //super.doDelete(req, resp);
     }
 
-    private int extractMatricule(String pathInfo) {
-        if (pathInfo != null) {
-            String[] pathElements = pathInfo.split("/");
-            if (pathElements.length > 1) {
-                try {
-                    return Integer.parseInt(pathElements[1]);
-                } catch (NumberFormatException e) {
-                    // Handle parsing error
-                }
-            }
+    private void doSearch(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
+        String searchString = req.getParameter("matricule");
+        Optional <Person> emp = employerDAO.searchByMatricule(Integer.valueOf(searchString));
+        if (emp.isPresent()){
+            req.setAttribute("person", (Employer)emp.get());
+            req.getRequestDispatcher("/searchEmployer.jsp").forward(req, resp);
+        }else {
+            resp.sendRedirect("/easybankjee/employers");
         }
-        // Handle invalid or missing matricule
-        return -1; // Or throw an exception, return a default value, etc.
     }
-
     public void destroy() {
     }
 }
