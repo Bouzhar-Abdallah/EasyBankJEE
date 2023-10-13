@@ -3,9 +3,12 @@
 <html>
 <head>
     <title>JSP - Hello World</title>
+
+
 </head>
 <body>
-<h1><%= "Hello World!" %>
+<jsp:include page="components/navbar.jsp" />
+<h1 class="test"><%= "Hello World!" %>
 </h1>
 <br/>
 <a href="hello-servlet">Hello Servlet</a>
