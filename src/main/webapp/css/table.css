@@ -176,3 +176,14 @@ input[type=radio]:checked + label:after {
         width: calc(50% - 8px);
     }
 }
+
+.flex{
+    display: flex;
+    justify-content: left;
+    border-bottom: 1px solid #2C2A4A;
+    margin-bottom: 5px;
+}
+.labelFlex{
+    width: 30%;
+    font-weight: bold;
+}
