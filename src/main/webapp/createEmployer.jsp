@@ -10,13 +10,13 @@
     <form class="form" id="myForm" method="POST" action="http://localhost:8080/easybankjee/employers">
         <input type="hidden" name="_METHOD" value="POST"/>
         <div class="banner">
-            <h1>Add Employer</h1>
+            <h1>Ajouter un Employer</h1>
         </div>
         <div class="item">
             <p>Name</p>
             <div class="name-item">
                 <input id="prenom" placeholder="Prenom" type="text" name="prenom">
-                <input id="nom" placeholder="Nom"  type="text" name="nom">
+                <input id="nom" placeholder="Nom" type="text" name="nom">
             </div>
         </div>
         <div class="item">

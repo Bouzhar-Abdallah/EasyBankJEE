@@ -11,12 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23c750b9-a035-4be0-b985-4bc529e818ba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bouzhar/EmployersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bouzhar/EmployersServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/components/styles.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/components/styles.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/createEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/createEmployer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employers.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/updateEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updateEmployer.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +182,7 @@
       <workItem from="1696924255584" duration="24000" />
       <workItem from="1696924322512" duration="164000" />
       <workItem from="1696924497212" duration="14000" />
-      <workItem from="1696924516563" duration="57997000" />
+      <workItem from="1696924516563" duration="58661000" />
     </task>
     <servers />
   </component>
