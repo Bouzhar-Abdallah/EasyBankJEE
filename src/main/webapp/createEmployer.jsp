@@ -5,7 +5,6 @@
 <html>
 <body>
 <jsp:include page="components/navbar.jsp"/>
-<h1>create form</h1>
 <div class="testbox">
     <form class="form" id="myForm" method="POST" action="http://localhost:8080/easybankjee/employers">
         <input type="hidden" name="_METHOD" value="POST"/>

@@ -13,11 +13,9 @@
     <list default="true" id="23c750b9-a035-4be0-b985-4bc529e818ba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/components/styles.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/components/styles.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/createEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/createEmployer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/listTable.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/listTable.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/table.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +185,7 @@
       <workItem from="1696924255584" duration="24000" />
       <workItem from="1696924322512" duration="164000" />
       <workItem from="1696924497212" duration="14000" />
-      <workItem from="1696924516563" duration="64665000" />
+      <workItem from="1696924516563" duration="66513000" />
     </task>
     <servers />
   </component>
