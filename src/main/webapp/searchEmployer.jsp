@@ -5,7 +5,7 @@
 <html>
 <body>
 <jsp:include page="components/navbar.jsp"/>
-<jsp:include page="components/searchForm.jsp"/>
+
 
 <div class="testbox">
     <div class="form" id="myForm">

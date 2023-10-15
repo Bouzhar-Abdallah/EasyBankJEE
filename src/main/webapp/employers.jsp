@@ -7,7 +7,7 @@
 <body>
 <jsp:include page="components/navbar.jsp"/>
 
-<jsp:include page="components/searchForm.jsp"/>
+
 <section>
     <h1>List des employers</h1>
     <div class="tbl-header">
@@ -15,7 +15,7 @@
         <table>
             <thead>
             <tr>
-                <th style="width: 70px;">Matricule</th>
+                <th style="width: 70px;">Mat</th>
                 <th style="width: 120px;">Prenom</th>
                 <th style="width: 120px;">Nom</th>
                 <th>Numero Tel</th>

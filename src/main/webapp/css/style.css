@@ -10,7 +10,7 @@ nav{
     padding: 5px;
 }
 .navbarList{
-    padding: 10px 0;
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
