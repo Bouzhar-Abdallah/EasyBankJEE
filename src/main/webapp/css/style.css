@@ -15,40 +15,13 @@ nav{
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    background: #FBDAE0;
-    border-color: #E34A6F;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
+    background: rgba(0,0,0,0.7);
 }
 .navbarItem{
     margin: 5px;
 }
 .navbarTitle{
     text-decoration: none;
-    color: #2C2A4A;
-    font-weight: 700;
-}
-table, th, td {
-    border: 1px solid #56A5B3;
-    border-radius: 10px;
-}
-th, td {
-    background-color: #E3F0F2;
-    padding: 3px 10px;
-}
-th {
-    background-color: #56A5B3;
-    padding: 3px 10px;
     color: white;
-}
-td.actions{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-td.icon{
-    width: 8px;
-    height: 8px;
-    margin: 10px 0;
+    font-weight: 700;
 }

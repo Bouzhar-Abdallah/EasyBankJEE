@@ -11,6 +11,13 @@
 <h1 class="test"><%= "Hello World!" %>
 </h1>
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+
+
+
+<div class="made-by-bouzhar">
+    Made by Abdallah Bouzhar
+</div>
+
+
 </body>
 </html>
