@@ -41,8 +41,8 @@
             <input id="dateRecrutement" placeholder="01-01-2018" type="date" name="dateRecrutement">
             <i class="fas fa-calendar-alt"></i>
         </div>
-        <div class="btn-block">
-            <button type="submit">SEND</button>
+        <div class="divToShowContainer">
+            <button class="editButton" type="submit">SEND</button>
         </div>
     </form>
 </div>

@@ -93,7 +93,7 @@ section{
     display: none;
     position: absolute;
     background-color: rgba(0,0,0,0.2);
-    padding: 10px;
+    padding: 5px;
     transform: translate(-50%, -50%);
 }
 
@@ -103,5 +103,32 @@ section{
 }
 .divToShowContainer{
     display: flex;
-    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+/*
+background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+background: linear-gradient(to right, #25c481, #25b7c4);
+    */
+.divToShowContainer button{
+    border: none;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    color: white;
+}
+.editButton{
+    background: #25b7c4;
+}
+.deleteButton{
+    background: #F50057;
+}
+.newButton{
+    background: #25c481;
+}
+.divToShowContainer .icon{
+    margin-right: 5px;
 }

@@ -5,6 +5,7 @@
 <html>
 <body>
 <jsp:include page="components/navbar.jsp"/>
+<jsp:include page="components/searchForm.jsp"/>
 <div class="testbox">
 <form class="form" id="myForm" method="POST" action="http://localhost:8080/easybankjee/employers">
     <input type="hidden" name="_METHOD" value="submitedUpdate"/>
@@ -48,11 +49,12 @@
         <i class="fas fa-calendar-alt"></i>
     </div>
 
-    <div class="btn-block">
-        <button type="submit">SEND</button>
+    <div class="divToShowContainer">
+        <button class="editButton" type="submit">SEND</button>
     </div>
 </form>
+
 </div>
 </body>
-<script src="scripts/script.js"></script>
+
 </html>

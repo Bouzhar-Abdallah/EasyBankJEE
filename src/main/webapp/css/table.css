@@ -160,14 +160,17 @@ input[type=radio]:checked + label:after {
     text-align: center;
 }
 .form button {
-    width: 150px;
-    padding: 10px;
+    padding: 10px 25px;
     border: none;
     border-radius: 5px;
-    background: white;
     font-size: 16px;
-    color: black;
+    color: white;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
 }
 .form button:hover {
     background: -webkit-linear-gradient(left, #25c481, #25b7c4);
